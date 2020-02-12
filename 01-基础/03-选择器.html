@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		color: red;
+	}
+	#p1{
+		color: green;
+	}
+	#p2{
+		color: blue;
+	}	
+	#p3{
+		color: pink;
+	}	
+	.pre{
+		color: yellow;
+	}
+	.after{
+		color: purple;
+	}
+	#p1.pre{
+		color: red;
+	}
+</style>
+</head>
+<body>
+	<h3>1、元素选择器</h3>
+	<div>div元素</div>
+	<div>div元素</div>
+	<div>div元素</div>
+	<h3>2、id选择器</h3>
+	<p id="p1">id=p1的p</p>
+	<p id="p2">id=p2的p</p>
+	<p id="p3">id=p3的p</p>
+	<h3>3、类选择器</h3>
+	<p class="pre">前3个p</p>
+	<p class="pre">前3个p</p>
+	<p class="pre">前3个p</p>
+	
+	<p class="after">后3个p</p>
+	<p class="after">后3个p</p>
+	<p class="after">后3个p</p>
+	<h3>4、更准确的选择</h3>
+	<p id="p1" class="pre" >更准确的选择</p>
+	
+</body>
+</html>
