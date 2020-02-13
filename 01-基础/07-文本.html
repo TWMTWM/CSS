@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/*让div和span的边框显露出来，便于理解本知识点*/
+	div,span{
+		border: 1px gray solid;
+		margin:10px;
+	}
+	div#div1{
+		color: pink;
+	}
+	div#left{
+		text-align: left;
+	}
+	div#right{
+		text-align: right;
+	}	
+	div#center{
+		text-align: center;
+	}	
+	span#right{
+		text-align: right;
+	}
+	
+	/*上划线*/
+	p#p1{
+		text-decoration: overline;
+	}
+	
+	/*删除效果*/
+	p#p2{
+		text-decoration: line-through;
+	}	
+	
+	/*下划线*/
+	p#p3{
+		text-decoration: underline;
+	}	
+	
+	/*闪烁效果*/
+	p#p4{
+		text-decoration: blink;
+	}	
+	p{
+		width: 200px;
+	}
+	p#line-height{
+		line-height: 200%;
+	}
+	p#letter-spacing{
+		letter-spacing: 2px;
+	}
+	p#word-spacing{
+		word-spacing: 10px;
+	}
+	p#text-indent{
+		text-indent: 50px;
+	}
+	p#uppercase{
+		text-transform: uppercase;
+	}
+	p#capitalize{
+		text-transform: capitalize;
+	}
+	p#lowercase{
+		text-transform: lowercase;
+	}
+	p#normal{
+		white-space: normal;
+	}
+	p#pre{
+		white-space: pre;
+	}
+	p#pre-wrap{
+		white-space: pre-wrap;
+	}
+	p#nowrap{
+		white-space: nowrap;
+	}
+</style>
+</head>
+<body>
+	<h3>1、文字颜色</h3>
+	<div id="div1">
+		粉红色
+	</div>
+	<h3>2、对齐</h3>
+	<div id="left">
+		左对齐
+	</div>
+	<div id="right">
+		右对齐
+	</div>
+	<div id="center">
+		居中
+	</div>
+	<span id="right">
+		span看不出右对齐效果
+	</span>
+	<h3>3、文本修饰</h3>
+	<p id="p1">上划线</p>
+	<p id="p2">删除效果</p>
+	<p id="p3">下划线</p>
+	<p id="p4">闪烁效果，大部分浏览器已经取消该效果</p>
+	<h3>4、行间距</h3>
+	<p>
+		默认行间距
+		默认行间距
+		默认行间距
+		默认行间距
+		默认行间距
+		默认行间距
+		默认行间距
+		默认行间距
+		默认行间距
+		默认行间距
+		默认行间距
+		默认行间距
+		默认行间距
+	</p>
+	<p id="line-height">
+		200%行间距
+		200%行间距
+		200%行间距
+		200%行间距
+		200%行间距
+		200%行间距
+		200%行间距
+		200%行间距
+		200%行间距
+		200%行间距
+		200%行间距		
+	</p>
+	<h3>5、字符间距</h3>
+	<p>
+		abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+	</p>
+	<p id="letter-spacing">
+		abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+	</p>
+	<h3>6、单词间距</h3>
+	<p>
+		abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+	</p>
+	<p id="word-spacing">
+		abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+	</p>
+	<h3>7、首行缩进</h3>
+	<p>
+		没有缩进效果的一段文字没有缩进效果的一段文字没有缩进效果的一段文字没有缩进效果的一段文字
+	</p>
+	<p id="text-indent">
+		有缩进效果的一段文字有缩进效果的一段文字有缩进效果的一段文字有缩进效果的一段文字有缩进效果的一段文字
+	</p>
+	<h3>8、大小写</h3>
+	<p id="uppercase">
+		abcD
+	</p>
+	<p id="capitalize">
+		abcD
+	</p>
+	<p id="lowercase">
+		abcD
+	</p>
+	<h3>9、空白格</h3>
+	<p id="normal">
+		white-space:normal 默认，多个空白格或者换行符会被合并成一个空白格。 white-space:normal 默认，多个空白格或者换行符会被合并成一个空白格。
+		white-space:normal 默认，多个空白格或者换行符会被合并成一个空白格。 white-space:normal 默认，多个空白格或者换行符会被合并成一个空白格。
+		white-space:normal 默认，多个空白格或者换行符会被合并成一个空白格。 white-space:normal 默认，多个空白格或者换行符会被合并成一个空白格。
+	</p>
+	<p id="pre">
+		white-space:pre 有多少空白格，显示多少空白格，相当于pre标签,如果长度超出父容器也不会换行。white-space:pre 有多少空白格，显示多少空白格，相当于pre标签,如果长度超出父容器也不会换行。
+		white-space:pre 有多少空白格，显示多少空白格，相当于pre标签,如果长度超出父容器也不会换行。white-space:pre 有多少空白格，显示多少空白格，相当于pre标签,如果长度超出父容器也不会换行。
+	</p>
+	<p id="pre-wrap">
+		white-space:pre-wrap 有多少空白格，显示多少空白格，相当于pre标签,如果长度超出父容器，会换行。white-space:pre-wrap 有多少空白格，显示多少空白格，相当于pre标签,如果长度超出父容器，会换行。
+		white-space:pre-wrap 有多少空白格，显示多少空白格，相当于pre标签,如果长度超出父容器，会换行。white-space:pre-wrap 有多少空白格，显示多少空白格，相当于pre标签,如果长度超出父容器，会换行。
+	</p>
+	<p id="nowrap">
+		white-space:nowrap 一直不换行，直到使用br。white-space:nowrap 一直不换行，直到使用br。white-space:nowrap 一直不换行，直到使用br。
+		white-space:nowrap 一直不换行，直到使用br。white-space:nowrap 一直不换行，直到使用br。white-space:nowrap 一直不换行，直到使用br。
+		white-space:nowrap 一直不换行，直到使用br。<br>
+		white-space:nowrap 一直不换行，直到使用br。<br>
+		换行<br>
+		换行<br>
+		换行
+	</p>
+</body>
+</html>
