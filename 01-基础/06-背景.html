@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	p#p1{
+		background-color: gray;
+	}
+	p#p2{
+		background-color: transparent;
+	}
+	p#p3{
+		background-color: rgb(250,0,255);
+	}	
+	p#p4{
+		background-color: #00ff00;
+	}	
+	div.d1{
+		background-image: url(../img/background.jpg);
+		width: 200px;
+		height: 100px;
+	}	
+	div#no-repeat{
+		background-image:url(../img/background_small.jpg);
+		width:200px;
+		height:100px;
+		background-repeat: no-repeat;
+	}
+	div#repeat-x{
+		background-image:url(../img/background_small.jpg);
+		width:200px;
+		height:100px;
+		background-repeat: repeat-x;		
+	}
+	div#repeat-y{
+		background-image:url(../img/background_small.jpg);
+		width:200px;
+		height:100px;
+		background-repeat: repeat-y;		
+	}
+	div#repeat{
+		background-image:url(../img/background_small.jpg);
+		width:200px;
+		height:100px;
+		background-repeat: repeat;		
+	}
+	div.contain{
+		background-image:url(../img/background_small.jpg);
+		width:200px;
+		height:100px;
+		background-size:contain;		
+	}
+</style>
+</head>
+<body>
+	<h3>1、背景颜色</h3>
+	<p id="p1">灰色</p>
+	<p id="p2">透明背景，默认即是透明背景</p>
+	<p id="p3">紫色</p>
+	<p id="p4">绿色背景</p>	
+	<h3>2、图片做背景</h3>
+	<div class="d1">
+		这是一个有背景图的div
+	</div>
+	<h3>3、本地测试</h3>
+	<p>
+		在本地测试的时候，请先从右侧下载图片 <br>
+		不要写成 background-image:url(/study/background.jpg); <br>
+		而是写成 background-image:url(background.jpg); <br>
+		并且把图片和html文件放在同一个目录下
+	</p>
+	<img alt="图片" src="../img/1236.png">
+	<h3>4、背景重复</h3>
+	<div id="no-repeat">
+		背景不重复
+	</div>
+	<div id="repeat-x">
+		背景水平重复
+	</div>
+	<div id="repeat-y">
+		背景垂直重复
+	</div>
+	<div id="repeat">
+		背景水平垂直方向都重复
+	</div>
+	<h3>5、背景平铺</h3>
+	<div class="contain">
+		背景平铺，通过拉伸实现，会有失真
+	</div>
+</body>
+</html>
