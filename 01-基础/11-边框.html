@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div.solid{border-style: solid;}
+	div.dotted{border-style: dotted;}
+	div.dashed{border-style: dashed;}
+	div.double{border-style: double;}
+	
+	div.red{
+		border-style:solid;
+		border-color: red;
+	}
+	div.blue{
+		border-style: solid;
+		border-color: blue;
+		border-width: 1px;
+	}
+	div.default{
+		border-style: solid;
+		border-color: blue;
+	}
+	div.d1{
+		border: 1px dotted LightSkyBlue;
+	}
+	div.d2{
+		width: 150px;
+		height: 150px;
+		background-color:lightgray;
+		border-top-style: solid;
+		border-top-color: red;
+		border-top-width: 50px;
+	}
+	div.left_top{
+		width: 150px;
+		height: 150px;
+		border-top-style: solid;
+		border-top-color: red;
+		border-top-width: 50px;
+		border-left-style: solid;
+		border-left-color: blue;
+		border-left-width: 50px;
+		background-color: lightgray;
+	}
+	div.alldirection{
+		width: 150px;
+		height: 150px;
+		border-top-style: solid;
+		border-top-color: red;
+		border-top-width: 50px;
+		border-right-style: solid;
+		border-right-color: blue;
+		border-right-width: 50px;
+		border-bottom-style: solid;
+		border-bottom-color: green;
+		border-bottom-width: 50px;		
+		border-left-style: solid;
+		border-left-color: yellow;
+		border-left-width: 50px;				
+	}
+	div.d3{
+		border: 1px solid red;
+	}
+	span.s1{
+		border:1px solid red;
+	}
+	table{
+		border-collapse: collapse;
+		width: 90%;
+	}
+	tr.odd{
+		background-color: #f8f8f8;
+	}
+	tr.head{
+		border-bottom-width: 2px;
+	}
+	tr{
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: lightgray;
+		height: 35px;
+	}
+	td{
+		width: 25%;
+		text-align: center;
+	}
+	div.d5{
+		width: 0px;
+		height: 0px;
+		border-top-style: solid;
+		border-top-color: red;
+		border-top-width: 10px;
+		border-right-style: solid;
+		border-right-color: white;
+		border-right-width: 10px;
+		border-bottom-style: solid;
+		border-bottom-color: white;
+		border-bottom-width: 10px;		
+		border-left-style: solid;
+		border-left-color: white;
+		border-left-width: 10px;		
+	}
+	.t1{
+		width: 100%;
+	}
+	.t1 td{
+		text-align: center;
+	}
+	.rowborder td{
+		background-color: red;
+		border-right: 2px solid #fff;
+		height: 3px;
+	}
+</style>
+</head>
+<body>
+	<h3>1、边框风格</h3>
+	<div>默认无边框div</div><br>
+	<div class="solid">实线边框</div><br>
+	<div class="dotted">点状边框</div><br>
+	<div class="dashed">虚线边框</div><br>
+	<div class="double">双线边框</div><br>
+	<h3>2、边框颜色</h3>
+	<div>默认无边框div</div><br>
+	<div class="red">实线红边框</div><br>
+	<h3>3、边框宽度</h3>
+	<div>默认无边框div</div><br>
+	<div class="blue">实线蓝色细边框</div><br>
+	<div class="default">实线蓝色默认宽度边框</div>
+	<h3>4、都放在一起</h3>
+	<div>默认无边框div</div><br>
+	<div class="d1">点状天蓝色细边框</div>
+	<h3>5、只有一个方向有边框</h3>
+	<div class="d2">只有上面有边框</div>
+	<h3>6、有交界的边都有边框</h3>
+	<div class="left_top">左边和上边都有边框</div>
+	<div class="alldirection">四边都有边框</div>
+	<h3>7、块级元素和内联元素的边框区别</h3>
+	<div>默认无边框div</div>
+	<div class="d3">实线红色细边框：div</div><br>
+	<span class="s1">实线红色细边框：span</span>
+	<h3>8、练习：表格斑马线</h3>
+	<table>
+	   <tr class="head">
+	       <td>id</td>
+	       <td>名称</td>
+	       <td>血量</td>
+	       <td>伤害</td>
+	    </tr>
+	   <tr class="odd">
+	       <td>1</td>
+	       <td>gareen</td>
+	       <td>340</td>
+	       <td>58</td>
+	    </tr>
+	   <tr class="even">
+	       <td>2</td>
+	       <td>teemo</td>
+	       <td>320</td>
+	       <td>76</td>
+	    </tr>
+	   <tr class="odd">
+	       <td>3</td>
+	       <td>annie</td>
+	       <td>380</td>
+	       <td>38</td>
+	    </tr>
+	   <tr class="even">
+	       <td>4</td>
+	       <td>deadbrother</td>
+	       <td>400</td>
+	       <td>90</td>
+	    </tr>
+	</table>	
+	<h3>9、练习：美人尖</h3>
+	<div class="d5"></div>
+	<h3>10、练习：断线下划线</h3>
+	<table class="t1">
+	  <tr>
+	    <td>商品</td>
+	    <td>数量</td>
+	    <td>价格</td>
+	    <td>小记</td>
+	  </tr>
+	  <tr class="rowborder">
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	  </tr> 
+	</table>	
+</body>
+</html>
