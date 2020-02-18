@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="../css/style2.css">
+<link rel="stylesheet" type="text/css" href="../css/style4.css">
 <style type="text/css">
 	.p1{
 		color:green;
@@ -11,11 +12,25 @@
 	.p2{
 		color:red
 	}
+	.p3{
+		color:blue;
+	}
+	.p4{
+		color:green !important;
+	}
 </style>
 <link rel="stylesheet" type="text/css" href="../css/style3.css">
+<link rel="stylesheet" type="text/css" href="../css/style5.css">
 </head>
 <body>
+	<h3>1、style标签与外部文件style.css样式重复</h3>
 	<p class="p1">颜色是绿色，优先使用靠后的最后出现的</p>
 	<p class="p2">颜色是蓝色，优先使用靠后的最后出现的</p>
+	<h3>2、style标签与style属性冲突</h3>
+	<p class="p3" style="color:red">p3颜色是红色，优先使用style属性</p>
+	<h3>3、！important</h3>
+	<p class="p4" style="color: red">p4颜色是，优先使用!important样式</p>
+	<p class="p5" style="color:red">p5的颜色是蓝色，优先使用!important样式，在style4.css</p>
+	<p class="p6" style="color:red">p6的颜色是蓝色，优先使用!important样式，在style5.css</p>
 </body>
 </html>
